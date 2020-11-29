@@ -77,7 +77,7 @@ class HowLongToBeatParser {
         let gameplayMainExtra = 0;
         let gameplayComplete = 0;
         gameName = $('.profile_header')[0].children[0].data.trim();
-        imageUrl = $('.game_image img')[0].attribs.src;
+        imageUrl = $('.game_image img')[0].attribs['data-cfsrc'];
         let liElements = $('.game_times li');
         const gameDescription = $('.in.back_primary.shadow_box p:first-child').text();
         let playableOn = [];
